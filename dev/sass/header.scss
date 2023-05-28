@@ -1,8 +1,98 @@
+
 header{
-	height: 7vh;
-	padding: 15px 0;
-	background: #222;
-	a {
+	.navbar{
+		padding: 32.1px 0;
+	}
+
+    .navbar-brand{
+		padding: 0;
+	}
+
+	.nav-link{
 		color: #fff;
+		&:hover, &:focus, &.active{
+			color: $primary-color;
+		}
+	}
+
+
+.navbar-nav{
+
+    max-width: 618px;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	margin: 0 auto;
+
+	.nav-link{
+		&.active{
+			color: $primary-color;
+		}
+		&.disabled{
+			color: #ffebeb5e;
+		}
+	}
+}
+
+.btn{
+	padding: 13px 26.7px;
+	margin-left: 16px;
+	white-space: nowrap;
+}
+
+.navbar-toggler{
+    border: none;
+	padding: 0;
+	width: 27.5px;
+	height: 25px;
+	position: relative;
+	&-icon{
+		position: absolute;
+		background:  #fff;
+		height: 2.5px;
+		width: 27.5px;
+		left: 0;
+		top: 11px;
+		transition: 0.3s;
+
+		&::before,
+		&::after{
+			content: "";
+			background: #fff;
+			display: block;
+			width: 27.5px;
+			height: 2.5px;
+			position: absolute;
+			top: -11px;
+			left: 0;
+			transition: 0.3s;
+
+		}
+
+		&::after{
+			top: initial;
+			left: 0;
+			bottom: -11px;
+
+		}
+	}
+	&-focus{
+		box-shadow: none;
+	}
+}
+
+}
+
+[aria-expanded="true"] {
+	.navbar-toggler-icon{
+		background-color: transparent;
+		&:after{
+			transform: rotate(45deg);
+			bottom: 0;
+		}
+		&:before{
+			top: 0;
+			transform: rotate(-45deg);
+		}
 	}
 }

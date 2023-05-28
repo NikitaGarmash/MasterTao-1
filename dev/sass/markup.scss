@@ -1,0 +1,21 @@
+.color-item{
+    width: 100%;
+    height: 150px;
+    margin-bottom: 24px;
+}
+
+.color-item-1{
+    background-color: $primary-color;
+}
+
+.color-item-2{
+    background-color: $secondary-color;
+}
+.color-item-3{
+    background-color: $bg-primary;
+    border: 1px solid #fff;
+}
+
+.color-item-4{
+    background-color: $bg-secondary;
+}
