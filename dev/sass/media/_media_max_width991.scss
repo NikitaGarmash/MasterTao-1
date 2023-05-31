@@ -15,11 +15,12 @@
     }
     .navbar-nav{
         text-align: center;
+        padding: 34px 0 28px;
 }
 
     .nav-link{
         font-size: 24px;
-        line-height: 222%;
+        line-height: 200%;
         text-align: center;
         color: #fff;
     }
@@ -30,15 +31,49 @@
         padding: 0 40px;
         transition: 1s;
         transform: translate(0, 15px);
+        text-align: center;
     }
 
     .btn{
+        
         justify-content: center;
-        margin: 25px 0 60px;
+        margin: 0 auto 60px;
         width: 100%;
         padding: 22px 26.7px;
+        letter-spacing: 0.6px;
+        max-width: 295px;
     }
 
+    }
+ 
+    .first-screen{
+        text-align: center;
+
+        &-title{
+            font-size: 32px;
+            max-width: 295px;
+            margin: 0 auto 10px;
+        }
+  
+        &-subtitle{
+            font-size: 16px;
+            margin: 0 auto 18px;
+            max-width: 277px;
+        }
+
+        .btn-lg{
+
+        }
+
+        .slick-list{
+            margin: 0 -20px;
+            border-radius: 0%
+        }
+        .slick-slide{
+            border-radius: 0%;
+            height: calc(100vh - 72px);
+            padding: 26vh 0 228px;
+        }
     }
 
 }

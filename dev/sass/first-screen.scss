@@ -1,7 +1,52 @@
 .first-screen{
+
+position: relative;
+
     .slick-slide{
-        padding: 163px 0 228px;
+        margin: 0 10px;
+        padding: 165px 92px 228px;
+        border-radius: 20px;
+        background-position: center;
+        background-size: cover;
         
+    }
+
+    .slick-dots{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        transform: translate(-50%, 0);
+        left: 50%;
+        top: calc(100% - 53px);
+        margin: 0;
+        padding: 0;
+        > li{
+            margin: 0 13px;
+            list-style: none;
+            height: 8px;
+            line-height: 1;
+            font-size: 0;
+            &.slick-active{
+                button{
+                    background-color: #fff;
+                }
+            }
+        }
+        button{
+            font-size: 0;
+            padding: 0;
+            border-radius: 50%;
+            width: 8px;
+            height: 8px;
+            opacity: 0.9;
+            border: 2px solid #fff;
+            background: transparent;
+        }
+    }
+
+    .slick-list{
+        margin: 0 -10px;
+        border-radius: 20px;
     }
 
     &-title{
@@ -10,6 +55,7 @@
         line-height: 126%;
         text-transform: uppercase;
         margin-bottom: 8px;
+        max-width: 500px;
     }
 
     &-subtitle{
@@ -17,6 +63,39 @@
         font-size: 20px;
         line-height: 135.5%;
         margin-bottom: 37px;
+        max-width: 336px;
     }
+
+    .arrows{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: flex;
+        transform: translate(-50%, 0);
+        
+        justify-content: space-between;
+        max-width: 1523px;
+        width: 100%;
+        height: 60px;
+    }
+    .slick-arrow{
+        font-size: 0;
+        width: 92px;
+        height: 92px;
+        background-image: url("data:image/svg+xml,%3Csvg width='46' height='46' viewBox='0 0 46 46' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.4024 43.2538C14.1171 43.5391 13.7605 43.6817 13.3683 43.6817C12.976 43.6817 12.6194 43.5391 12.3342 43.2538C11.7636 42.6833 11.7636 41.7561 12.3342 41.1856L30.5202 22.9996L12.3342 4.81351C11.7636 4.24296 11.7636 3.31583 12.3342 2.74529C12.9047 2.17475 13.8318 2.17475 14.4024 2.74529L33.6225 21.9654C34.1931 22.536 34.1931 23.4631 33.6225 24.0337L14.4024 43.2538Z' fill='white'/%3E%3C/svg%3E%0A");
+        background-color: transparent;
+        background-repeat: no-repeat;
+        border: none;
+    
+        &.slick-prev{
+            transform: rotate(180deg) translate(10px, 45px);
+
+            
+            }
+    
+    
+        }
+
+   
 }
 
