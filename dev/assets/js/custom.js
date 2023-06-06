@@ -18,3 +18,29 @@ $( document ).ready(function() {
 
     })
 });
+
+
+document.getElementById('fileInput').onchange = function () {
+    //short-name
+    document.getElementById('file-name').innerHTML = this.files[0].name;
+    //long-name
+    //document.getElementById('file-name').innerHTML = this.value;
+}
+
+
+function CheckboxContainerPadding() {
+    const checkButton1 = document.querySelector('.check-button');
+    const checkButton2 = document.querySelectorAll('.check-button');
+
+    checkButton1.classList.add('.test1')
+
+    checkButton2.forEach(item => {
+        item.closest('[class*="col"]').classList.add('padding-top');
+    })
+}
+
+if (document.querySelector('.calculation-form')) {
+    CheckboxContainerPadding()
+} else {
+    null
+}
