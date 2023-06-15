@@ -1,5 +1,22 @@
-
-
-
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1570px) {
+    .calculation .container:after {
+        right: 0px;
+    }
 }
+
+@media screen and (max-width: 1400px) {
+    .slider-template {
+        margin: 0 auto;
+        width: 780px;
+        .slick-arrow{
+            &.slick-next{
+                right: -80px;
+            }
+            &.slick-prev{
+                left: -80px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1199px) {}
