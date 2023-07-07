@@ -19,4 +19,35 @@
     }
 }
 
-@media screen and (max-width: 1199px) {}
+@media screen and (max-width: 1199px) {
+    .about-us{
+        .container{
+            position: relative;
+
+            .template-title {
+                text-align: center;
+                &:after {
+                    position: absolute;
+                    left: 50%;
+                }
+            }
+            
+            .about-us-description{
+                display: flex;
+                margin: auto;
+            }
+            &:after {
+                content: "";
+                position: absolute;
+                right: 17%;
+                bottom: -60%;
+                
+                width: 40%;
+                height: 80%;
+                background: url(../assets/img/notebook.png) left bottom/contain no-repeat;
+                
+            }
+        }
+       
+    }
+}

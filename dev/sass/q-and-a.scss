@@ -1,0 +1,57 @@
+.q-and-a{
+    margin-top: 350px;
+
+    .questions{
+
+        .accordion-button {
+            background-color: $bg-primary;
+            border: 1px solid #aca3a3;
+            margin-bottom: 10px;
+            padding: 15px;
+
+            &:after{
+                background-image: url(assets/img/arrow-circle-left\ 1.svg);
+                
+            }
+            
+            border-radius: 10px;
+            color: #fff;
+        }
+        .accordion-item{
+            background-color: #fff;
+            border: none;
+        }
+
+        .accordion-header {
+            background-color: $bg-primary;
+        }
+    }
+
+    .q-and-a-form{
+        max-width: 626px;
+       
+       
+        border-radius: 20px;
+        padding: 20px 20px 20px;
+        
+        box-shadow: 5px 15px 40px #1c1f2a;
+        position: relative;
+        input{
+            width: 100%;
+        }
+        [class*="col"] {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        button{
+            width: 100%;
+           
+        }
+
+        .form-description{
+            margin: 12px 0 20px;
+        }
+     
+    }
+}

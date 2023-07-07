@@ -1,10 +1,20 @@
-footer{
-    height: 100px;
-    background: $secondary-color;
+footer {
+    height: 318px;
+    background: $bg-primary;
     margin-top: 56px;
+
+    .container {
+      
+        .col-md-3{
+            .f-text{
+                margin-top: 22px;
+            }
+        }
+    }
+
 }
 
-.markup{
+.markup {
     position: fixed;
     left: 10px;
     bottom: 10px;
@@ -17,4 +27,3 @@ footer{
     border-radius: 23px;
     line-height: 1;
 }
- 

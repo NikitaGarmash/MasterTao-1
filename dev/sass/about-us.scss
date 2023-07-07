@@ -1,0 +1,34 @@
+.about-us {
+    &-description {
+        max-width: 555px;
+        height: 331px;
+    }
+
+    .container {
+        position: relative;
+        margin-top: 250px;
+        margin-bottom: 250px;
+
+        .template-title {
+            text-align: left;
+
+            &:after {
+                position: absolute;
+                left: 40px;
+            }
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            right: -85px;
+            bottom: -90px;
+            max-width: 625px;
+            width: 50%;
+            height: 60vh;
+            background: url(../assets/img/notebook.png) left bottom/contain no-repeat;
+            margin-right: 85px;
+        }
+    }
+
+}
